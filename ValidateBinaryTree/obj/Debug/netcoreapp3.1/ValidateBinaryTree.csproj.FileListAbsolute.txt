@@ -1,0 +1,13 @@
+D:\Leetcode\ValidateBinaryTree\bin\Debug\netcoreapp3.1\ValidateBinaryTree.exe
+D:\Leetcode\ValidateBinaryTree\bin\Debug\netcoreapp3.1\ValidateBinaryTree.deps.json
+D:\Leetcode\ValidateBinaryTree\bin\Debug\netcoreapp3.1\ValidateBinaryTree.runtimeconfig.json
+D:\Leetcode\ValidateBinaryTree\bin\Debug\netcoreapp3.1\ValidateBinaryTree.runtimeconfig.dev.json
+D:\Leetcode\ValidateBinaryTree\bin\Debug\netcoreapp3.1\ValidateBinaryTree.dll
+D:\Leetcode\ValidateBinaryTree\bin\Debug\netcoreapp3.1\ValidateBinaryTree.pdb
+D:\Leetcode\ValidateBinaryTree\obj\Debug\netcoreapp3.1\ValidateBinaryTree.csprojAssemblyReference.cache
+D:\Leetcode\ValidateBinaryTree\obj\Debug\netcoreapp3.1\ValidateBinaryTree.AssemblyInfoInputs.cache
+D:\Leetcode\ValidateBinaryTree\obj\Debug\netcoreapp3.1\ValidateBinaryTree.AssemblyInfo.cs
+D:\Leetcode\ValidateBinaryTree\obj\Debug\netcoreapp3.1\ValidateBinaryTree.csproj.CoreCompileInputs.cache
+D:\Leetcode\ValidateBinaryTree\obj\Debug\netcoreapp3.1\ValidateBinaryTree.dll
+D:\Leetcode\ValidateBinaryTree\obj\Debug\netcoreapp3.1\ValidateBinaryTree.pdb
+D:\Leetcode\ValidateBinaryTree\obj\Debug\netcoreapp3.1\ValidateBinaryTree.genruntimeconfig.cache
