@@ -15,7 +15,7 @@ namespace AtoI
             var trimmedString = str.Trim(' ');
             char[] strToChar = trimmedString.ToCharArray();
             StringBuilder sb = new StringBuilder();
-            string[] allowedChars = { "+", "-" };
+            char[] allowedChars = { '+', '-' };
 
             foreach (char c in strToChar)
             {
