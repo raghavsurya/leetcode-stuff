@@ -1,0 +1,4 @@
+D:\Leetcode\AtoI\obj\Debug\netcoreapp3.1\AtoI.csprojAssemblyReference.cache
+D:\Leetcode\AtoI\obj\Debug\netcoreapp3.1\AtoI.AssemblyInfoInputs.cache
+D:\Leetcode\AtoI\obj\Debug\netcoreapp3.1\AtoI.AssemblyInfo.cs
+D:\Leetcode\AtoI\obj\Debug\netcoreapp3.1\AtoI.csproj.CoreCompileInputs.cache
