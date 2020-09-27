@@ -1,0 +1,53 @@
+class Solution {
+    public String minWindow(String s, String t) {
+        
+      /* 
+      Step 1: first store all the characters with their count (of occurence) in the target string (t) in an Array , say call it minWindowCounter
+      
+      
+      Step 2: Use sliding window approach - use a left and a right pointer
+                2a. Right Pointer for sliding through the string until a substring that contains the target                             string t is found
+                2b: use a counter to store the number of characters in string s parsed that are also in "t". Once we have completed finding all characters of "t" in "s", i.e. if a window is found, need to find the next window which may be shorter than the current
+                2c. calculate the substing length and store it. Next we need to find if there is any other                              substring that is lesser than the current one. Repeat until whoe string is parsed through. 
+                2d. to do this,  loop through "right" pointer starting from 0 until end of string. decrement the                    count of the char at current "right" index in the minWindowCounter. 
+                2e.if for any character in the array the count is >= 0 which means the current index is the one of the characters of string "t", increase the counter (initialised in 2a). while counter matches the string "t" length, check if the difference of right and left pointers (add +1 because of index) is < than previous min_window. if so assign this to min_window and get the substring from left to right+1. that is what you'll return finally
+                2f.  increment the value for the charAt(left) in the minWindowCounter and check if the value is > 0. this is because the characters contained matching those in "t" will have values 0 and those not matching will have -1 because of step 2e. if value > 0, decrement the counter
+        
+        Step 3: Moveleft to next position. combined with 2f and 3, after a min_wiondow is found, the count wil be decremented and left will keep moving to next pos from where calculating the next min_window will start
+      
+      */
+        
+        int[] targetCounter = new int[128];
+        
+        for(char c: t.toCharArray()) {
+            ++targetCounter[c];
+        }
+        
+        int left = 0;
+        int min_value = Integer.MAX_VALUE;
+        int count = 0;
+        String res = "";
+        
+        for (int right = 0; right < s.length(); right++) {
+            if(--targetCounter[s.charAt(right)] >= 0) {
+                count++;
+                
+                while(count == t.length()) {
+                    if (min_value > right - left + 1) {
+                        min_value = right - left + 1;
+                        res = s.substring(left, right + 1);
+                    }
+                    
+                    if(++targetCounter[s.charAt(left)] > 0) {
+                        count--;
+                    }
+                    left++;
+                }
+            }
+            
+            
+        }
+        return res;
+        
+    }
+}
