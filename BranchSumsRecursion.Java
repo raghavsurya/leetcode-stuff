@@ -1,3 +1,5 @@
+//O(n) time and space
+
 import java.util.*;
 
 class Program {
