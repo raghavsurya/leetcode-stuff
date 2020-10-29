@@ -1,0 +1,35 @@
+import java.util.*;
+
+class Program {
+  public static int findClosestValueInBst(BST tree, int target) {
+    // Write your code here.
+		if(tree == null) return 0;
+		int finalAnswer = tree.value;
+		Stack<BST> stack = new Stack<BST>();
+		stack.push(tree);
+		while(!stack.isEmpty()) {
+			var root = stack.pop();
+			if(root == null) return finalAnswer;
+			if(Math.abs(target - root.value) < Math.abs(target - finalAnswer)) {
+				finalAnswer = root.value;
+			}
+			if(root.left != null) {
+					stack.push(root.left);
+			}
+			if(root.right != null) {
+					stack.push(root.right);
+			}
+		}
+    return finalAnswer;
+  }
+
+  static class BST {
+    public int value;
+    public BST left;
+    public BST right;
+
+    public BST(int value) {
+      this.value = value;
+    }
+  }
+}
