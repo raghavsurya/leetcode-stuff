@@ -1,3 +1,6 @@
+//Run time : O(logn)
+//Space complexity: O(1)
+
 import java.util.*;
 
 class Program {
