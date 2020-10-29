@@ -31,12 +31,8 @@ class Program {
 			finalValue =- currentNode.value;
 		} 
 		finalValue += currentNode.value;
-		if(currentNode.left != null) {
 				callRecursively(currentNode.left, list, finalValue);
-			}
-			if(currentNode.right != null) {
 				callRecursively(currentNode.right, list, finalValue);
-			}
 			
 		return list;
 	}
