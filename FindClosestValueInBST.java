@@ -5,21 +5,22 @@ class Program {
     // Write your code here.
 		if(tree == null) return 0;
 		int finalAnswer = tree.value;
-		Stack<BST> stack = new Stack<BST>();
-		stack.push(tree);
-		while(!stack.isEmpty()) {
-			var root = stack.pop();
-			if(root == null) return finalAnswer;
-			if(Math.abs(target - root.value) < Math.abs(target - finalAnswer)) {
+		BST root = tree;
+		while(root != null) {
+			if(Math.abs(target - finalAnswer) > Math.abs(target - root.value)) {
 				finalAnswer = root.value;
 			}
-			if(root.left != null) {
-					stack.push(root.left);
+			if(target < root.value) {
+				root = root.left;
 			}
-			if(root.right != null) {
-					stack.push(root.right);
+			else if(target > root.value) {
+				root = root.right;
+			}
+			else {
+				break;
 			}
 		}
+			
     return finalAnswer;
   }
 
