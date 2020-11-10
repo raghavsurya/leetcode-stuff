@@ -13,6 +13,8 @@ class Node {
 }
 */
 
+// there is also a O(N) TC and O(1) SC solution using constant space. https://leetcode.com/problems/copy-list-with-random-pointer/solution/
+
 class Solution {
     public Node copyRandomList(Node head) {
         
