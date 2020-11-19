@@ -37,5 +37,7 @@ class Solution {
    
 }
 
-// TC: O(N) since we will end up visiting nodes at most twice. for example visit 6 when it is left, then again visit 6 when node = node.right
+// TC: O(N) since we will end up visiting nodes at most twice. for example visit 6 when it is left, then again visit 6 when node = node.right. The algorithm is slower
+// than the recursive and stack solutions because it is `greedy` cos it makes decisions at each steps and carries further unlike recursive where the right for a current node
+// is calculated until all of its left and right subtrees are calculated / visited
 //SC: O(1) boom!
