@@ -44,3 +44,5 @@ class Solution {
     }
 }
 
+// TC: O(N) since we visit every node exactly once
+//SC: O(N) since we might visit N nodes worst case if tree is left skewed. 
