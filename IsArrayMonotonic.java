@@ -35,5 +35,5 @@ class Program {
 		return true;
   }
 }
-//O(n) sc
-//O(1) tc
+//O(n) tc
+//O(1) sc
