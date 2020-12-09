@@ -20,4 +20,4 @@ class Solution {
 }
 
 //Time Complexity: O(n^2)
-//SC: O(1)
+//SC: O(n)
