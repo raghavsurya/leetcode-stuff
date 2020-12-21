@@ -1,0 +1,33 @@
+//Time complexity:
+//Sc: 
+
+class Solution {
+    public int numIslands(char[][] grid) {
+        if(grid == null) return 0;
+        int numberOfIslands = 0;
+        int row = grid.length;
+        int column = grid[0].length;
+        
+        for(int i = 0; i < row; i++) {
+            for(int j = 0; j < column; j++) {
+                if(grid[i][j] == '1') {
+                    numberOfIslands += dfs(grid, i , j);
+                }
+            }
+        }
+        return numberOfIslands;
+    }
+    
+    private int dfs(char[][] grid, int row, int column) {
+        if(row >= grid.length || row  < 0 || column  >= grid[row].length || column < 0
+          || grid[row][column] == '0') {
+            return '0';
+        } 
+        grid[row][column] = '0';
+        dfs(grid, row + 1, column);
+        dfs(grid, row - 1, column);
+        dfs(grid, row, column + 1);
+        dfs(grid, row, column - 1);
+        return 1;
+    }
+}
